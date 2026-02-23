@@ -119,6 +119,18 @@ vim.schedule(function() vim.o.clipboard = 'unnamedplus' end)
 -- Enable break indent
 vim.o.breakindent = true
 
+--  A <Tab> character displays as 4 spaces
+vim.o.tabstop = 4
+
+-- Indentation uses 4 spaces << >> = 
+vim.o.shiftwidth = 4
+
+-- Makes <Tab> and <Backspace> behave like 4 spaces while editing
+vim.o.softtabstop = 4
+
+-- Convert <Tab> into spaces
+vim.o.expandtab = true
+
 -- Save undo history
 vim.o.undofile = true
 
